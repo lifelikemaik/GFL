@@ -90,8 +90,12 @@ def startup(manager: ServerManager):
     rpc_config = manager.config.node.rpc
     bind_host, bind_port = rpc_config.server_host, rpc_config.server_port
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=rpc_config.max_workers))
+    print("Server object created")
     gfl_pb2_grpc.add_GflServicer_to_server(GflServicer(manager), server)
+    print("Handlers added")
     server.add_insecure_port(f"{bind_host}:{bind_port}")
+    print("Starting Server")
     server.start()
+    print("Server started")
     res = server.wait_for_termination()
     print(f"Res: {res}")
