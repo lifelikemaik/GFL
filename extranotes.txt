@@ -14,3 +14,24 @@ torchvision==0.4.1
 Attention
 
 pillow<7.0.0
+
+PYTHON ZU NEU !!! Python 3.7
+
+im gleichen Pfad
+
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt install python3.7
+sudo apt install python3.7-dev
+sudo apt install python3.7-venv
+
+python3.7 -m venv namederenv
+
+
+pip3 install -r requirements.txt
+
+Alternative wenn version keine Rolle spielt
+
+virtualenv name
+
+source name/bin/activate
+deactivate
