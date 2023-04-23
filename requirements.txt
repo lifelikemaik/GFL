@@ -3,7 +3,7 @@
 # für den build bräuchte man wheel, geht maybe schneller
 wheel
 zcommons==0.2.1
-Werkzeug==0.16.0
+# Werkzeug==0.16.0
 requests==2.22.0
 Flask==1.1.1
 matplotlib==3.1.1
@@ -31,3 +31,6 @@ traits
 # urllib3==1.26.15
 # requests 2.22.0 requires urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1
 urllib3==1.25.11
+# python flserver ImportError: cannot import name 'escape' from 'jinja2'
+Jinja2==3.0.3
+werkzeug==2.0.2
