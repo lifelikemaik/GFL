@@ -15,6 +15,9 @@ Attention
 
 pillow<7.0.0
 
+GGF. purgen aller dependencies:
+pip freeze | xargs pip uninstall -y
+
 PYTHON ZU NEU !!! Python 3.7
 
 im gleichen Pfad
